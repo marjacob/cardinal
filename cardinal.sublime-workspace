@@ -1,0 +1,695 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"apiUri",
+				"apiUriRestaurant"
+			],
+			[
+				"getre",
+				"getRestaurantsCallback"
+			],
+			[
+				"api",
+				"apiUriRestaurant"
+			],
+			[
+				"rsta",
+				"restaurant"
+			],
+			[
+				"m_",
+				"m_error_buffer"
+			],
+			[
+				"CURLE",
+				"CURLE_OK"
+			],
+			[
+				"Curl",
+				"CurlException"
+			],
+			[
+				"Cu",
+				"CURLcode"
+			],
+			[
+				"conf",
+				"conf_packages"
+			],
+			[
+				"print_",
+				"print_append"
+			],
+			[
+				"print",
+				"print_working"
+			],
+			[
+				"user",
+				"user_ssh_home"
+			],
+			[
+				"ho",
+				"conf_hostname"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 682,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modules/Food.js",
+			"settings":
+			{
+				"buffer_size": 2226,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "node_modules/node-rest-client/lib/node-rest-client.js",
+			"settings":
+			{
+				"buffer_size": 19763,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/config.js",
+			"settings":
+			{
+				"buffer_size": 230,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "close",
+		"selected_items":
+		[
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"rename",
+				"ANF: Rename File"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"cmake",
+				"Set Syntax: CMakeEditor"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"s",
+				"Sort Lines"
+			],
+			[
+				"comi",
+				"Git: Commit"
+			],
+			[
+				"comit",
+				"Git: Commit"
+			],
+			[
+				"st",
+				"Git: Status"
+			],
+			[
+				"co",
+				"Git: Commit"
+			],
+			[
+				"commt",
+				"Git: Commit"
+			],
+			[
+				"check",
+				"Git: Checkout"
+			],
+			[
+				"PUSH",
+				"Git: Push"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"ssc++",
+				"Set Syntax: C++"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Log"
+			],
+			[
+				"list",
+				"Snippet: Listing"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git commit ",
+				"Git: Commit"
+			],
+			[
+				"git checkout",
+				"Git: Checkout Current File"
+			],
+			[
+				"extra",
+				"CiteBibTeX: Extract citations in current file"
+			],
+			[
+				"extr",
+				"CiteBibTeX: Extract citations in current file"
+			],
+			[
+				"",
+				"CiteBibTeX: Extract citations in current file"
+			],
+			[
+				"bib",
+				"CiteBibTeX: Extract citations in current file"
+			],
+			[
+				"citebib",
+				"CiteBibTeX: Extract citations in current file"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"delete",
+				"ANF: Delete File"
+			],
+			[
+				"git p",
+				"Git: Pull"
+			],
+			[
+				"git add ",
+				"Git: Update Project Ignored Files"
+			],
+			[
+				"git ",
+				"Git: Commit history"
+			],
+			[
+				"git pul",
+				"Git: Pull"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"ssbash",
+				"Set Syntax: Shell Script (Bash)"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/martin/Development/cardinal",
+		"/Users/martin/Development/cardinal/api",
+		"/Users/martin/Development/cardinal/api/models",
+		"/Users/martin/Development/cardinal/config",
+		"/Users/martin/Development/cardinal/controllers",
+		"/Users/martin/Development/cardinal/modules",
+		"/Users/martin/Development/cardinal/node_modules",
+		"/Users/martin/Development/cardinal/node_modules/node-rest-client",
+		"/Users/martin/Development/cardinal/node_modules/node-rest-client/lib"
+	],
+	"file_history":
+	[
+		"/Users/martin/Development/ruter/src/Curl/WebClient.cc",
+		"/Users/martin/Development/ruter/ruter.sublime-project",
+		"/Users/martin/Development/master/code/src/Curl/CurlException.cpp",
+		"/Users/martin/Development/master/code/src/include/Curl/CurlException.hpp",
+		"/Users/martin/Development/master/code/src/include/Curl/WebClient.hpp",
+		"/Users/martin/Development/master/code/src/Curl/WebClient.cpp",
+		"/Users/martin/Development/master/code/CMakeLists.txt",
+		"/Users/martin/Development/master/code/src/main.cpp",
+		"/Users/martin/Development/master/code/src/include/Ruter/Location.hpp",
+		"/Users/martin/Development/master/code/src/include/Ruter.hpp",
+		"/Users/martin/Development/master/code/src/include/Curl.hpp",
+		"/Users/martin/Development/master/code/src/include/Ruter/Place.hpp",
+		"/Users/martin/Development/master/code/src/include/Ruter/Ruter.hpp",
+		"/Users/martin/Development/master/code/src/include/Ruter/Time.hpp",
+		"/Users/martin/Development/master/code/src/Curl/WebResponse.cpp",
+		"/Users/martin/Development/master/code/src/include/Ruter/County.hpp",
+		"/Users/martin/Development/master/code/src/Curl/WebRequest.cpp",
+		"/Users/martin/Development/master/code/src/Curl/Parameter.cpp",
+		"/Users/martin/Development/master/code/src/Ruter/County.cpp",
+		"/Users/martin/Development/master/code/src/Ruter/Location.cpp",
+		"/Users/martin/Development/master/code/src/Ruter/Place.cpp",
+		"/Users/martin/Development/master/code/src/Ruter/Ruter.cpp",
+		"/Users/martin/Development/master/code/src/Ruter/Time.cpp",
+		"/Users/martin/Development/master/code/src/curl.hpp",
+		"/Users/martin/Development/master/code/src/ruter.hpp",
+		"/Users/martin/Development/master/code/src/Ruter/County.hpp",
+		"/Users/martin/Development/master/code/src/Ruter/Location.hpp",
+		"/Users/martin/Development/master/code/src/Ruter/Place.hpp",
+		"/Users/martin/Development/master/code/src/Ruter/Ruter.hpp",
+		"/Users/martin/Development/master/code/src/Ruter/Time.hpp",
+		"/Users/martin/Development/master/code/src/Curl.hpp",
+		"/Users/martin/Development/master/ruter.hpp",
+		"/Users/martin/Development/master/code/src/Ruter.hpp",
+		"/Users/martin/Development/master/code/src/curl/WebResponse.cpp",
+		"/Users/martin/Development/master/code/src/curl/WebRequest.hpp",
+		"/Users/martin/Development/master/code/src/curl/WebRequest.cpp",
+		"/Users/martin/Development/master/code/src/curl/WebClient.hpp",
+		"/Users/martin/Development/master/code/src/curl/WebClient.cpp",
+		"/Users/martin/Development/master/code/src/curl/Parameter.cpp",
+		"/Users/martin/Development/master/code/src/curl/IParameter.hpp",
+		"/Users/martin/Development/master/code/src/curl/CurlException.cpp",
+		"/Users/martin/Library/Application Support/MailMate/Messages.noindex/IMAP/martirj%40mail.uio.no@imap.uio.no/Sent Items.mailbox/Messages/29705.eml",
+		"/Users/martin/Development/master/thesis/main.tex",
+		"/Users/martin/Development/master/thesis/ideas.bib",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/martin/Development/master/code/lib/apibus/include/apibus.h",
+		"/Users/martin/Development/master/thesis/pattern_creational_table.tex",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/SublimeGit/SublimeGit.sublime-settings",
+		"/Users/martin/Development/master/.gitignore",
+		"/Users/martin/Development/master/master.sublime-project",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/User/CiteBibtex.sublime-settings",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/CiteBibtex/CiteBibtex.sublime-settings",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/Users/martin/Development/setup-debian-8/setup-debian-8.sh",
+		"/Users/martin/.profile",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/AdvancedNewFile/README.md",
+		"/Users/martin/.bashrc",
+		"/Users/martin/.yolo",
+		"/Users/martin/Dropbox/Sublime/User/Default (Windows).sublime-keymap",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".get",
+			"Client",
+			"client",
+			"userdata",
+			"php",
+			"field",
+			"footer",
+			"Secure",
+			"Reliable",
+			"section",
+			"subsection",
+			"bloch",
+			"\\$\\w+",
+			"username",
+			"user",
+			"user_timezone",
+			"ti",
+			"\\\n",
+			"set_hostname",
+			"set_timezone",
+			"install_packages",
+			"configure_firewall",
+			"{\n",
+			"configure_firewall"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								573,
+								573
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "modules/Food.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1157,
+								1157
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "node_modules/node-rest-client/lib/node-rest-client.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 19763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9478,
+								9478
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4235.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config/config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CMakeEditor":
+	{
+		"height": 104.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 104.0
+	},
+	"output.git-commit":
+	{
+		"height": 104.0
+	},
+	"output.git-push":
+	{
+		"height": 104.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "cardinal.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"giti",
+				".gitignore"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Development/sigmap/sigmap.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 202.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
