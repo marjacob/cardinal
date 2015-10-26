@@ -74,10 +74,14 @@ var Food = function(client) {
 		});
 	};
 
+	var printCategory = function(nick, to, dishes) {
+		for (var i = 0, j = dishes.length; i < j; ++i) {
+			client.say(to, (i + 1) + ". " + dishes[i]);
+		}
+	}
+
 	var onListMenu = function(nick, to, restaurant) {
 		m_dinner_client.getMenu(restaurant, function(cafeteria) {
-			var dishes = cafeteria[0].dishes;
-			
 			client.say(
 				to, 
 				nick + ": " + 
@@ -85,8 +89,10 @@ var Food = function(client) {
 				dishes.length + " rett(er)."
 			);
 
-			for (var i = 0, j = dishes.length; i < j; ++i) {
-				client.say(to, " - " + dishes[i]);
+			for (var i = 0, j = cafeteria.length, j; i < j; ++i) {
+
+				client.say(to, "Meny: " + cafeteria[i].category);
+				printCategory(nick, to, cafeteria[i].dishes);
 			}
 		});
 	}
