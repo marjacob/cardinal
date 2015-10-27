@@ -4,7 +4,8 @@ var config = {
 	realname: "martirj",
 	server: {
 		channels: [ 
-			"#martirj"
+			"#martirj",
+			"#termvakt-fjas"
 		],
 		network: "IRCnet",
 		address: "irc.ifi.uio.no",
