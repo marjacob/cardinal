@@ -84,9 +84,7 @@ var Food = function(client) {
 		m_dinner_client.getMenu(restaurant, function(cafeteria) {
 			client.say(
 				to, 
-				nick + ": " + 
-				"Dagens meny på " + restaurant + " består av " + 
-				dishes.length + " rett(er)."
+				nick + ": Ok, lister opp for " + restaurant
 			);
 
 			for (var i = 0, j = cafeteria.length, j; i < j; ++i) {
