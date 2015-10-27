@@ -83,7 +83,7 @@ var Food = function(client) {
 	var onListMenu = function(nick, to, restaurant) {
 		m_dinner_client.getMenu(restaurant, function(cafeteria) {
 			for (var i = 0, j = cafeteria.length, j; i < j; ++i) {
-				if (1 < i) {
+				if (j < i) {
 					client.say(to, "Her kommer " + cafeteria[i].category + "...");
 				}
 				printCategory(nick, to, cafeteria[i].dishes);
