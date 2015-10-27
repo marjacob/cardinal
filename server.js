@@ -8,6 +8,7 @@ var config = require("./config/config.js").config;
 var Authenticator = require("./modules/Authenticator.js");
 var EventEmitter = require('events').EventEmitter;
 var Food = require("./modules/Food.js");
+var Tanya = require("./modules/Tanya.js");
 
 var main = function() {
 	var bot = new irc.Client(config.server.address, config.nickname, {
@@ -20,6 +21,7 @@ var main = function() {
 
 	var auth = new Authenticator(bot);
 	var food = new Food(bot);
+	var tanya = new Tanya(bot);
 }
 
 if (require.main === module) {

@@ -82,16 +82,10 @@ var Food = function(client) {
 
 	var onListMenu = function(nick, to, restaurant) {
 		m_dinner_client.getMenu(restaurant, function(cafeteria) {
-			client.say(
-				to, 
-				nick + ": " + 
-				"Dagens meny på " + restaurant + " består av " + 
-				dishes.length + " rett(er)."
-			);
-
 			for (var i = 0, j = cafeteria.length, j; i < j; ++i) {
-
-				client.say(to, "Meny: " + cafeteria[i].category);
+				if (1 < i) {
+					client.say(to, "Her kommer " + cafeteria[i].category + "...");
+				}
 				printCategory(nick, to, cafeteria[i].dishes);
 			}
 		});
