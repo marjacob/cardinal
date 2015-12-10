@@ -75,7 +75,13 @@ var Food = function(client) {
 	var onListMenu = function(nick, to, restaurant) {
 		m_dinner_client.getMenu(restaurant, function(cafeteria) {
 			for (var i = 0, j = cafeteria.length, j; i < j; ++i) {
-				menu_response = cafeteria[i].category + ": ";
+				var category = cafeteria[i].category;
+
+				if (category === "pris") {
+					continue;
+				}
+
+				var menu_response = category + ": ";
 
 				for (var k = 0; i < cafeteria[i].dishes.length; ++i) {
 					menu_response += cafeteria[i].dishes.join(", ");
