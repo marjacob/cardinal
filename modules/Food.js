@@ -60,13 +60,15 @@ var Food = function(client) {
 		m_dinner_client.getRestaurants(function(restaurants) {
 			console.log(restaurants)
 
-			client.say(
-				to,
-				nick + ": Skriv \"!meny <restaurant>\" " +
-				"for dagens meny.");
+			var keys = [];
 
-			// Send the restaurants list back.
-			client.say(to, " - " + restaurants.join(", "));
+			for (var restaurant in restaurants) {
+				if (restaurants.hasOwnProperty(restaurant)) {
+					keys.push(restaurant);
+				}
+			}
+
+			client.say(to, nick + ": " + keys.join(", "));
 		});
 	};
 
