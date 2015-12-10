@@ -80,6 +80,8 @@ var Food = function(client) {
 				for (var k = 0; i < cafeteria[i].dishes.length; ++i) {
 					menu_response += cafeteria[i].dishes.join(", ");
 				}
+
+				client.say(to, menu_response);
 			}
 		});
 	}
