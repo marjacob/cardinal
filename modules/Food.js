@@ -66,7 +66,7 @@ var Food = function(client) {
 				"for dagens meny.");
 
 			// Send the restaurants list back.
-			client.say(to, " - " + restaurant.join(", "));
+			client.say(to, " - " + restaurants.join(", "));
 		});
 	};
 
