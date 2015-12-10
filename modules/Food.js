@@ -72,19 +72,14 @@ var Food = function(client) {
 		});
 	};
 
-	var printCategory = function(nick, to, dishes) {
-		for (var i = 0, j = dishes.length; i < j; ++i) {
-			client.say(to, (i + 1) + ". " + dishes[i]);
-		}
-	}
-
 	var onListMenu = function(nick, to, restaurant) {
 		m_dinner_client.getMenu(restaurant, function(cafeteria) {
 			for (var i = 0, j = cafeteria.length, j; i < j; ++i) {
-				if (j > 1) {
-					client.say(to, "Her kommer " + cafeteria[i].category + "...");
+				menu_response = cafeteria[i].category + ": ";
+
+				for (var k = 0; i < cafeteria[i].dishes.length; ++i) {
+					menu_response += cafeteria[i].dishes.join(", ");
 				}
-				printCategory(nick, to, cafeteria[i].dishes);
 			}
 		});
 	}
