@@ -61,16 +61,12 @@ var Food = function(client) {
 			console.log(restaurants)
 
 			client.say(
-				to, 
-				nick + ": Skriv \"!meny <restaurant>\" " + 
+				to,
+				nick + ": Skriv \"!meny <restaurant>\" " +
 				"for dagens meny.");
 
 			// Send the restaurants list back.
-			for (var restaurant in restaurants) {
-				if (restaurants.hasOwnProperty(restaurant)) {
-					client.say(to, " - " + restaurant);
-				}
-			}
+			client.say(to, " - " + restaurant.join(", "));
 		});
 	};
 
