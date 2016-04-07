@@ -155,6 +155,7 @@ class Dish(object):
 
 def strip_sio(dish):
     prefixes = [
+        "Du finner også flere varme ingredienser på buffeten:",
         "Working Class Hero Thursday:"
     ]
 
