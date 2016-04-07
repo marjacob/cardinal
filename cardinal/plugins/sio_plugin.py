@@ -34,22 +34,27 @@ class SioPlugin(object):
             if cafeterias:
                 return "spisesteder: {0}".format(cafeterias)
             else:
-                return "Det virker som tjenesten er nede (╯°□°）╯︵ ┻━┻"
+                return "virker som tjenesten er nede (╯°□°）╯︵ ┻━┻"
 
     @command
     def dagens(self, mask, target, args):
         """
         List opp alle rettene som serveres et gitt sted i dag.
 
-            %%dagens <sted>
+            %%dagens [<sted>]
         """
-        cafeteria = sio.Cafeteria.from_name(args["<sted>"])
+        place = args["<sted>"] if args["<sted>"] else "ifi"
+        cafeteria = sio.Cafeteria.from_name(place)
         if cafeteria:
-            return "{cafeteria}: {dishes}".format(
-                cafeteria=cafeteria.name,
-                dishes=numbered_dishes(cafeteria.dishes))
+            if cafeteria.dishes:
+                return "{cafeteria}: {dishes}".format(
+                    cafeteria=cafeteria.name,
+                    dishes=numbered_dishes(cafeteria.dishes))
+            else:
+                return "{cafeteria} har ikke publisert noe :(".format(
+                    cafeteria=cafeteria.name)
         else:
-            return "Kjenner ikke til det stedet (￣^￣ﾒ)＼(_ _ ;)".format(mask)
+            return "kjenner ikke til det stedet :(".format(mask)
 
 
 def numbered_dishes(dishes):
