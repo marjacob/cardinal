@@ -1,0 +1,9 @@
+# Requirements
+irc3
+pip
+requests
+
+# Testing
+coverage
+green
+pylint

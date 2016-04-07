@@ -4,20 +4,84 @@
 		"selected_items":
 		[
 			[
-				"apiUri",
-				"apiUriRestaurant"
+				"req",
+				"req_floating"
 			],
 			[
-				"getre",
-				"getRestaurantsCallback"
+				"venv",
+				"venv_exec"
 			],
 			[
-				"api",
-				"apiUriRestaurant"
+				"get",
+				"get_departures"
 			],
 			[
-				"rsta",
-				"restaurant"
+				"__",
+				"__result"
+			],
+			[
+				"RUTER",
+				"RUTER_API_TIMEZONE"
+			],
+			[
+				"try",
+				"try	Try/Except"
+			],
+			[
+				"cand",
+				"candidate_short_name"
+			],
+			[
+				"short",
+				"short_name"
+			],
+			[
+				"walking",
+				"walking_factor"
+			],
+			[
+				"change",
+				"change_punish"
+			],
+			[
+				"walki",
+				"walking_factor"
+			],
+			[
+				"max",
+				"max_walking_minutes"
+			],
+			[
+				"chan",
+				"change_punish"
+			],
+			[
+				"json",
+				"json_source"
+			],
+			[
+				"__from",
+				"__from_json_item"
+			],
+			[
+				"__change",
+				"__change_margin"
+			],
+			[
+				"__chang",
+				"__change_margin"
+			],
+			[
+				"out",
+				"output_directory"
+			],
+			[
+				"outp",
+				"output-directory"
+			],
+			[
+				"build",
+				"build_directory"
 			],
 			[
 				"m_",
@@ -60,34 +124,10 @@
 	"buffers":
 	[
 		{
-			"file": "server.js",
+			"file": "src/main.py",
 			"settings":
 			{
-				"buffer_size": 682,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "modules/Food.js",
-			"settings":
-			{
-				"buffer_size": 2226,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "node_modules/node-rest-client/lib/node-rest-client.js",
-			"settings":
-			{
-				"buffer_size": 19763,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config/config.js",
-			"settings":
-			{
-				"buffer_size": 230,
+				"buffer_size": 300,
 				"line_ending": "Unix"
 			}
 		}
@@ -99,21 +139,93 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "close",
+		"height": 307.0,
+		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"close",
-				"Project: Close"
-			],
 			[
 				"save",
 				"Project: Save As"
 			],
 			[
-				"status",
-				"Git: Status"
+				"close",
+				"Project: Close"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"ssc",
+				"Set Syntax: C++"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ssjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"save ",
+				"Project: Save As"
 			],
 			[
 				"push",
@@ -122,6 +234,46 @@
 			[
 				"commit",
 				"Git: Commit"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"make",
+				"Build With: Make"
+			],
+			[
+				"clean",
+				"Build With: Make - Clean"
+			],
+			[
+				"build",
+				"Build With: Make"
+			],
+			[
+				"latex",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"git check",
+				"Git: Checkout"
+			],
+			[
+				"ush",
+				"Permute Lines: Shuffle"
 			],
 			[
 				"rename",
@@ -136,23 +288,11 @@
 				"Set Syntax: CMakeEditor"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"commi",
 				"Git: Commit"
 			],
 			[
 				"com",
-				"Git: Commit"
-			],
-			[
-				"stat",
-				"Git: Status"
-			],
-			[
-				"comm",
 				"Git: Commit"
 			],
 			[
@@ -212,20 +352,12 @@
 				"Git: Log"
 			],
 			[
-				"list",
-				"Snippet: Listing"
-			],
-			[
 				"git push",
 				"Git: Push"
 			],
 			[
 				"git stat",
 				"Git: Status"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
 			],
 			[
 				"git add",
@@ -288,19 +420,11 @@
 				"Git: Pull"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"sort",
-				"Sort Lines"
-			],
-			[
 				"ssbash",
 				"Set Syntax: Shell Script (Bash)"
 			]
 		],
-		"width": 601.0
+		"width": 490.0
 	},
 	"console":
 	{
@@ -321,20 +445,56 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/martin/Development/cardinal",
-		"/Users/martin/Development/cardinal/api",
-		"/Users/martin/Development/cardinal/api/models",
-		"/Users/martin/Development/cardinal/config",
-		"/Users/martin/Development/cardinal/controllers",
-		"/Users/martin/Development/cardinal/modules",
-		"/Users/martin/Development/cardinal/node_modules",
-		"/Users/martin/Development/cardinal/node_modules/node-rest-client",
-		"/Users/martin/Development/cardinal/node_modules/node-rest-client/lib"
+		"/Users/martin/Development/python-template",
+		"/Users/martin/Development/python-template/src"
 	],
 	"file_history":
 	[
-		"/Users/martin/Development/ruter/src/Curl/WebClient.cc",
-		"/Users/martin/Development/ruter/ruter.sublime-project",
+		"/Users/martin/Development/checkers-server/checkers-server.sublime-project",
+		"/Users/martin/Development/python-template/python-template.sublime-project",
+		"/Users/martin/Development/checkers-server/Makefile",
+		"/Users/martin/Development/checkers-server/src/__init__.py",
+		"/Users/martin/Development/checkers-server/src/main.py",
+		"/Users/martin/Development/checkers-server/requirements-to-freeze.txt",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/martin/Development/master-code/.gitignore",
+		"/Users/martin/Development/master-code/src/bus/subject_interface.py",
+		"/Users/martin/Development/master-code/src/bus/observer_interface.py",
+		"/Users/martin/Development/master-code/src/bus/get_stop_command.py",
+		"/Users/martin/Development/master-code/src/bus/get_lines_command.py",
+		"/Users/martin/Development/master-code/src/bus/get_departures_command.py",
+		"/Users/martin/Development/master-code/src/bus.py",
+		"/Users/martin/Development/master-code/master-code.sublime-project",
+		"/Users/martin/Development/master-code/interfaces/__init__.py",
+		"/Users/martin/Development/master-code/ruter/__init__.py",
+		"/Users/martin/Development/master-code/ruter/stop.py",
+		"/Users/martin/Development/master-code/ruter/departure.py",
+		"/Users/martin/Development/master-code/ruter/api.py",
+		"/Users/martin/Development/master-code/interfaces/observer.py",
+		"/Users/martin/Development/master-code/interfaces/subject.py",
+		"/Users/martin/Development/master-code/get_departures.py",
+		"/Users/martin/Development/master-code/get_stop.py",
+		"/Users/martin/Development/master-code/bus.py",
+		"/Users/martin/Development/master-code/main.py",
+		"/Users/martin/Development/master-code/interfaces/command.py",
+		"/Users/martin/Development/master-code/ruter/location.py",
+		"/Users/martin/Development/master-code/ruter/line.py",
+		"/Users/martin/Development/master-code/lib/python3.5/site-packages/requests/exceptions.py",
+		"/Users/martin/Development/master-code/ruter/exceptions.py",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/martin/Development/master-code/bus_client.py",
+		"/Users/martin/Development/master-code/pylintrc",
+		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/martin/Development/master-code/location.py",
+		"/Users/martin/Development/master-code/common/ruter/__init__.py",
+		"/Users/martin/Development/master-code/common/ruter/api.py",
+		"/Users/martin/Development/master-code/common/ruter/Place/GetStop.py",
+		"/Users/martin/Development/master-code/common/ruter/ruter.py",
+		"/Users/martin/Development/master-code/common/ruter/Place/Place.py",
+		"/Users/martin/Development/sigmap/Makefile",
 		"/Users/martin/Development/master/code/src/Curl/CurlException.cpp",
 		"/Users/martin/Development/master/code/src/include/Curl/CurlException.hpp",
 		"/Users/martin/Development/master/code/src/include/Curl/WebClient.hpp",
@@ -377,7 +537,6 @@
 		"/Users/martin/Library/Application Support/MailMate/Messages.noindex/IMAP/martirj%40mail.uio.no@imap.uio.no/Sent Items.mailbox/Messages/29705.eml",
 		"/Users/martin/Development/master/thesis/main.tex",
 		"/Users/martin/Development/master/thesis/ideas.bib",
-		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/martin/Development/master/code/lib/apibus/include/apibus.h",
 		"/Users/martin/Development/master/thesis/pattern_creational_table.tex",
 		"/Users/martin/Library/Application Support/Sublime Text 3/Packages/SublimeGit/SublimeGit.sublime-settings",
@@ -397,7 +556,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -411,10 +570,125 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			".get",
-			"Client",
-			"client",
-			"userdata",
+			"interfaces",
+			"key",
+			"get_stops",
+			"proposals",
+			"type",
+			"get_lines_ruter",
+			"color",
+			"__color",
+			"favorite",
+			"favorites",
+			"get_favorites",
+			"lines",
+			"transport_types",
+			"coordinate",
+			"favorite",
+			"BaseHTTPError",
+			"__get_oslo_time",
+			"_get_oslo_time",
+			"_process_response",
+			"get_stops",
+			"3011616",
+			"6127665",
+			"3010038",
+			"3010032",
+			"3010031",
+			"3010030",
+			"types",
+			"RUTER_REST_API_ENDPOINT",
+			"_get_oslo_time",
+			"_enforce_range",
+			"_endpoint",
+			"max_proposals",
+			"_max_proposals",
+			"_max_walking_minutes",
+			"_max_proposals",
+			"_walking_factor",
+			"_change_punish",
+			"_change_margin",
+			"scroll",
+			"__from_json",
+			"self",
+			"get_place",
+			"api",
+			"ReisAPI",
+			"(self, ",
+			"self",
+			"self.__walking_factor",
+			"self.__max_walking_minutes",
+			"self.__max_proposals",
+			"self.__change_punish",
+			"self.__change_margin",
+			"self.__base",
+			"self.__process_response",
+			"self.__get_oslo_time",
+			"self.__enforce_range",
+			"__enforce_range",
+			"@staticmethod",
+			"Departure",
+			"max_propos",
+			"self.__process_response",
+			"remember_open",
+			"new_window",
+			"new_window_se",
+			"auto_match",
+			"caret",
+			"id",
+			"__id",
+			"departure",
+			"json_source",
+			"__from_json_list",
+			"trip",
+			"get_stop",
+			"-*-",
+			"self.__short_name = json_source[\"ShortName\"]",
+			"x",
+			"__change_margin",
+			"change_margin",
+			"__enforce_range",
+			"__get_oslo_time",
+			"__process_response",
+			"return response$",
+			"type",
+			"y_2",
+			"x_2",
+			"y_1",
+			"x_1",
+			"tab",
+			"=4",
+			"type",
+			"max",
+			"min",
+			"get_stops_by_line_id",
+			"params = params",
+			"xmin",
+			"dest",
+			"destination",
+			"toPlace",
+			"fromPlace",
+			"GetFavourites",
+			"tab",
+			"self.__get_oslo_time()",
+			";",
+			"get_current_time",
+			"__change_punish",
+			"change_punish",
+			"__change_margin",
+			"change_margin",
+			"to",
+			"from",
+			"__endpoint",
+			"longtitude",
+			"latitude",
+			"x",
+			"proposal_count",
+			"figure",
+			"table",
+			"figure",
+			"thesis.pdf",
+			"MyDoc",
 			"php",
 			"field",
 			"footer",
@@ -423,18 +697,7 @@
 			"section",
 			"subsection",
 			"bloch",
-			"\\$\\w+",
-			"username",
-			"user",
-			"user_timezone",
-			"ti",
-			"\\\n",
-			"set_hostname",
-			"set_timezone",
-			"install_packages",
-			"configure_firewall",
-			"{\n",
-			"configure_firewall"
+			"\\$\\w+"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -442,6 +705,8 @@
 		"regex": true,
 		"replace_history":
 		[
+			"return json.loads(response.text)",
+			"params=params"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -457,19 +722,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "server.js",
+					"file": "src/main.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 682,
+						"buffer_size": 300,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								573,
-								573
+								300,
+								300
 							]
 						],
 						"settings":
@@ -477,7 +742,7 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -485,106 +750,18 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "modules/Food.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1157,
-								1157
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "node_modules/node-rest-client/lib/node-rest-client.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 19763,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9478,
-								9478
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 4235.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "config/config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 230,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								230,
-								230
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -599,11 +776,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -613,35 +797,23 @@
 		]
 	},
 	"menu_visible": true,
-	"output.CMakeEditor":
-	{
-		"height": 104.0
-	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"output.git":
+	"output.git-pull":
 	{
-		"height": 104.0
-	},
-	"output.git-commit":
-	{
-		"height": 104.0
-	},
-	"output.git-push":
-	{
-		"height": 104.0
+		"height": 98.0
 	},
 	"output.sftp":
 	{
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "cardinal.sublime-project",
+	"project": "python-template.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -650,6 +822,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"bus",
+				"bus.py"
+			],
+			[
+				"stop",
+				"ruter/stop.py"
+			],
 			[
 				"giti",
 				".gitignore"
@@ -665,7 +845,7 @@
 		[
 			[
 				"",
-				"~/Development/sigmap/sigmap.sublime-project"
+				"~/Development/checkers-server/checkers-server.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -687,9 +867,10 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 202.0,
+	"side_bar_width": 136.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
+		"max_columns": 2
 	}
 }
