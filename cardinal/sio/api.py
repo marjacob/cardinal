@@ -45,7 +45,7 @@ class Cafeteria(object):
                     continue
                 for dish in category["dishes"]:
                     # Just keep the part describing the actual dish.
-                    dish = dish.split("Allergener")[0:1][0].strip()
+                    dish = strip_sio(dish)
                     dishes.append(Dish(category["category"], dish))
 
             self.__dishes.value = dishes
@@ -151,3 +151,17 @@ class Dish(object):
         mentions the needle or not.
         """
         return needle.upper() in self.__description.upper()
+
+
+def strip_sio(dish):
+    prefixes = [
+        "Working Class Hero Thursday:"
+    ]
+
+    # Strip away stupid prefixes.
+    for prefix in prefixes:
+        if dish.startswith(prefix):
+            dish = dish[len(prefix):]
+            break
+
+    return dish.split("Allergener")[0:1][0].strip()

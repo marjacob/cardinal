@@ -18,7 +18,8 @@ class SioPlugin(object):
     @command
     def sio(self, mask, target, args):
         """
-        List opp alle spisestedene som driftes av SiO.
+        List opp alle spisestedene som driftes av SiO, eller eventuelt de
+        stedene som har noe spesielt.
 
             %%sio [<rett>]
         """
@@ -38,7 +39,7 @@ class SioPlugin(object):
     @command
     def dagens(self, mask, target, args):
         """
-        List off alle rettene som serveres et gitt sted i dag.
+        List opp alle rettene som serveres et gitt sted i dag.
 
             %%dagens <sted>
         """

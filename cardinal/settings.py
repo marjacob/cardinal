@@ -16,7 +16,8 @@ class CardinalSettings(object):
         self.autojoins = ["##cardinal-default"]
         self.plugins = [
             "irc3.plugins.log",
-            "plugins.sio_plugin"
+            "plugins.sio_plugin",
+            "plugins.termvakt_plugin"
         ]
 
     @property
