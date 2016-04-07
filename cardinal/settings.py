@@ -35,7 +35,7 @@ class CardinalSettings(object):
     def config_file(self):
         return os.path.join(self.config_home, "config.json")
 
-    def to_json(self):
+    def to_dict(self):
         return {
             "nick": self.nick,
             "realname": self.realname,
@@ -46,7 +46,7 @@ class CardinalSettings(object):
             "includes": self.plugins
         }
 
-    def from_json(self, data):
+    def from_dict(self, data):
         if "nick" in data:
             self.nick = data["nick"]
         if "realname" in data:
@@ -67,13 +67,13 @@ class CardinalSettings(object):
             with open(self.config_file,
                       mode="r",
                       encoding="UTF-8") as config_file:
-                self.from_json(json.load(config_file))
+                self.from_dict(json.load(config_file))
         except FileNotFoundError:
-            return
+            self.save()
 
     def save(self):
         os.makedirs(self.config_home, mode=0o770, exist_ok=True)
         with open(self.config_file,
                   mode="w",
                   encoding="UTF-8") as config_file:
-            return json.dump(self.to_json(), config_file, indent="\t")
+            return json.dump(self.to_dict(), config_file, indent="\t")

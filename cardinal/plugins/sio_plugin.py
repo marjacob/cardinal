@@ -20,13 +20,20 @@ class SioPlugin(object):
         """
         List opp alle spisestedene som driftes av SiO.
 
-            %%sio
+            %%sio [<rett>]
         """
-        cafeterias = ", ".join(sorted(sio.Cafeteria.all().keys()))
-        if cafeterias:
-            return cafeterias
+        if args["<rett>"]:
+            hits = sio.Cafeteria.search(args["<rett>"])
+            if hits:
+                return ", ".join(cafeteria[0].name for cafeteria in hits)
+            else:
+                return "ingen som serverer det i dag （ﾉ´д｀）"
         else:
-            return "Nå skjedde det noe rart, tror tjenesten er nede."
+            cafeterias = ", ".join(sorted(sio.Cafeteria.all().keys()))
+            if cafeterias:
+                return "spisesteder: {0}".format(cafeterias)
+            else:
+                return "Det virker som tjenesten er nede (╯°□°）╯︵ ┻━┻"
 
     @command
     def dagens(self, mask, target, args):
@@ -39,25 +46,9 @@ class SioPlugin(object):
         if cafeteria:
             return "{cafeteria}: {dishes}".format(
                 cafeteria=cafeteria.name,
-                dishes=numbered_dishes(cafeteria.dishes)
-            )
+                dishes=numbered_dishes(cafeteria.dishes))
         else:
-            # TODO: Gjøre om til "/me kjenner ikke til det stedet."(?)
-            return "Aldri hørt om det stedet :(".format(mask)
-
-    @command
-    def finn(self, mask, target, args):
-        """
-        Finn ut hvilke steder som har digg mat.
-
-            %%finn <rett>
-        """
-        # TODO: Print hvis det ikke er noen treff også.
-        hits = sio.Cafeteria.search(args["<rett>"])
-        if hits:
-            return ", ".join(cafeteria[0].name for cafeteria in hits)
-        else:
-            return "Ingen som serverer det i dag :("
+            return "Kjenner ikke til det stedet (￣^￣ﾒ)＼(_ _ ;)".format(mask)
 
 
 def numbered_dishes(dishes):

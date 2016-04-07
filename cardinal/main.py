@@ -20,14 +20,15 @@ def main(args):
         nick=config.nick,
         host=config.host,
         ssl='+' if config.ssl else '',
-        port=config.port
-    ))
+        port=config.port))
 
-    bot = irc3.IrcBot.from_config(config.to_json())
-    bot.run(forever=True)
+    bot = irc3.IrcBot.from_config(config.to_dict())
 
-    # print(sio.Cafeteria.from_name("parken"))
-    # return os.EX_OK
+    try:
+        bot.run(forever=True)
+    except:
+        return os.EX_SOFTWARE
+    return os.EX_OK
 
 
 if __name__ == "__main__":
