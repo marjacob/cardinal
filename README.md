@@ -123,3 +123,5 @@ New plugins may be submitted with pull requests!
 
 ## More information
 To read more about `requirements.txt` versus `requirements-to-freeze.txt`, refer to [this article](http://www.kennethreitz.org/essays/a-better-pip-workflow) by Kenneth Reitz.
+
+Information from SiO is fetched using the RESTful [API](https://github.com/VegarM/sio-todays-dinner) developed by [VegarM](https://github.com/VegarM). The official endpoint is available at `http://api.desperate.solutions/dagens/`.
