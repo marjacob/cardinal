@@ -44,7 +44,8 @@ class CardinalSettings(object):
             "host": self.host,
             "port": self.port,
             "ssl": self.ssl,
-            "autojoins": self.autojoins
+            "autojoins": self.autojoins,
+            "includes": self.plugins
         }
 
     def from_dict(self, data):
@@ -60,6 +61,8 @@ class CardinalSettings(object):
             self.ssl = data["ssl"]
         if "autojoins" in data:
             self.autojoins = data["autojoins"]
+        if "includes" in data:
+            self.plugins = data["includes"]
 
     def load(self):
         try:

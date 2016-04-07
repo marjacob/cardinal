@@ -90,7 +90,7 @@ Cardinal is configured through the configuration file `~/.cardinal/config.json`.
 
 The following is an automatically generated example configuration file for the Freenode IRC network (not UiO).
 
-```
+```son
 {
 	"host": "chat.freenode.net",
 	"port": 6697,
@@ -99,6 +99,12 @@ The following is an automatically generated example configuration file for the F
 	"realname": "cardinal",
 	"autojoins": [
 		"##cardinal-default"
+	],
+	"includes": [
+		"irc3.plugins.log",
+		"irc3.plugins.uptime",
+		"plugins.sio_plugin",
+		"plugins.termvakt_plugin"
 	]
 }
 ```
@@ -110,6 +116,8 @@ There are currently no actions to perform server-side.
 Because Cardinal uses the `irc3` library, we have inherited its plugin system. Take a look at the files in `cardinal/plugins/` to see how the existing plugins have been developed. Please refer to the [`irc3` documentation](https://irc3.readthedocs.org/en/latest/) for more information.
 
 You should be aware that the `irc3` library uses the [`docopt` library](http://docopt.org) extensively, and the plugin system depends on it. This is weird but also good. I am a bit confused myself.
+
+To make Cardinal load new plugins, add them the to the `includes` section in your local configuration file.
 
 New plugins may be submitted with pull requests!
 
