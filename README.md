@@ -93,18 +93,12 @@ The following is an automatically generated example configuration file for the F
 ```
 {
 	"host": "chat.freenode.net",
-	"autojoins": [
-		"##cardinal-default"
-	],
 	"port": 6697,
 	"ssl": true,
-	"realname": "cardinal",
 	"nick": "cardinal",
-	"includes": [
-		"irc3.plugins.log",
-		"irc3.plugins.uptime",
-		"plugins.sio_plugin",
-		"plugins.termvakt_plugin"
+	"realname": "cardinal",
+	"autojoins": [
+		"##cardinal-default"
 	]
 }
 ```

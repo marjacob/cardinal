@@ -16,6 +16,7 @@ class CardinalSettings(object):
         self.autojoins = ["##cardinal-default"]
         self.plugins = [
             "irc3.plugins.log",
+            "irc3.plugins.uptime",
             "plugins.sio_plugin",
             "plugins.termvakt_plugin"
         ]
@@ -43,8 +44,7 @@ class CardinalSettings(object):
             "host": self.host,
             "port": self.port,
             "ssl": self.ssl,
-            "autojoins": self.autojoins,
-            "includes": self.plugins
+            "autojoins": self.autojoins
         }
 
     def from_dict(self, data):
@@ -60,8 +60,6 @@ class CardinalSettings(object):
             self.ssl = data["ssl"]
         if "autojoins" in data:
             self.autojoins = data["autojoins"]
-        if "includes" in data:
-            self.plugins = data["includes"]
 
     def load(self):
         try:
