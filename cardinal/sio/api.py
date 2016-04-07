@@ -70,7 +70,7 @@ class Cafeteria(object):
             word=name.lower(),
             possibilities=cafeterias.keys(), # All in lower case.
             n=1,
-            cutoff=0.6)
+            cutoff=0.5)
         return cafeterias[match[0]] if match else None
 
     @classmethod
