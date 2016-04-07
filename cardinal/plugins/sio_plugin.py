@@ -32,7 +32,7 @@ class SioPlugin(object):
         else:
             cafeterias = ", ".join(sorted(sio.Cafeteria.all().keys()))
             if cafeterias:
-                return "spisesteder: {0}".format(cafeterias)
+                return "{0}".format(cafeterias)
             else:
                 return "virker som tjenesten er nede (╯°□°）╯︵ ┻━┻"
 
