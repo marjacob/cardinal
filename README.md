@@ -61,11 +61,23 @@ make repl
 ```
 You can launch the interactive Python interpreter from inside the virtual environment. Your own code as well as packages installed in the virtual environment is available here.
 
+#### Executing a shell
+
+```bash
+make shell
+```
+
+Launch a shell inside the virtual environment. This allows you to use e.g. `pip` and `python` directly.
+
 #### Executing your code
 ```bash
 make run
 ```
 Executes your code inside the virtual environent. Unfortunately, this command does not support any arguments (and it never will, due to limitations in `make`).
+
+#### Executing unit tests
+
+Performs all of the non-existing unit tests in the project. They may be implemented one day in the near or distant future.
 
 #### You made a mess of it
 ```bash
@@ -98,6 +110,14 @@ The following is an automatically generated example configuration file for the F
 ```
 
 There are currently no actions to perform server-side.
+
+## Extending Cardinal
+
+Because Cardinal uses the `irc3` library, we have inherited its plugin system. Take a look at the files in `cardinal/plugins/` to see how the existing plugins have been developed. Please refer to the [`irc3` documentation](https://irc3.readthedocs.org/en/latest/) for more information.
+
+You should be aware that the `irc3` library uses the [`docopt` library](http://docopt.org) extensively, and the plugin system depends on it. This is weird but also good. I am a bit confused myself.
+
+New plugins may be submitted with pull requests!
 
 ## More information
 To read more about `requirements.txt` versus `requirements-to-freeze.txt`, refer to [this article](http://www.kennethreitz.org/essays/a-better-pip-workflow) by Kenneth Reitz.
