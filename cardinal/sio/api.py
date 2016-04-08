@@ -157,6 +157,7 @@ def strip_sio(dish):
     prefixes = [
         "Du finner også flere varme ingredienser på buffeten:",
         "Funky Junk Friday:",
+        "På buffeten finner du også",
         "Working Class Hero Thursday:"
     ]
 
@@ -166,4 +167,4 @@ def strip_sio(dish):
             dish = dish[len(prefix):]
             break
 
-    return dish.split("Allergener")[0:1][0].strip()
+    return dish.split("Allergener")[0:1][0].strip().capitalize()

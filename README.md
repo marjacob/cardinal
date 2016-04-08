@@ -76,7 +76,9 @@ make run
 Executes your code inside the virtual environent. Unfortunately, this command does not support any arguments (and it never will, due to limitations in `make`).
 
 #### Executing unit tests
-
+```bash
+make test
+```
 Performs all of the non-existing unit tests in the project. They may be implemented one day in the near or distant future.
 
 #### You made a mess of it
