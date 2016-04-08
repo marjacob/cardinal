@@ -167,4 +167,5 @@ def strip_sio(dish):
             dish = dish[len(prefix):]
             break
 
+    # TODO: Replace with: http://stackoverflow.com/a/30834199
     return dish.split("Allergener")[0:1][0].strip().capitalize()
