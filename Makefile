@@ -5,7 +5,7 @@ SHELL := /bin/sh
 
 # Python
 # /snacks/bin is added for users at the University of Oslo.
-python_bin    := $(PATH=/snacks/bin:${PATH} shell which python3)
+python_bin    := $(shell PATH=/snacks/bin:${PATH} which python3)
 
 # Requirements
 req_floating  := requirements-to-freeze.txt
