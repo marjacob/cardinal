@@ -1,4 +1,5 @@
 # Requirements
+Click
 irc3
 pip
 requests

@@ -3,7 +3,7 @@
 from irc3.plugins.command import command
 import irc3
 
-import sio
+import cardinal.sio as sio
 
 
 @irc3.plugin

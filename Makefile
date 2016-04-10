@@ -15,10 +15,10 @@ req_pinned    := requirements.txt
 venv_path     := .venv
 venv_bin_path := $(venv_path)/bin
 venv_activate := $(venv_bin_path)/activate
-venv_exec     := source $(venv_activate) && PS1="venv $$ " exec
+venv_exec     := . $(venv_activate) && PS1="venv $$ " exec
 
 # Virtual environment tools.
-venv_pip      := $(venv_exec) pip
+venv_pip      := $(venv_exec) pip3
 venv_pylint   := $(venv_exec) pylint
 venv_python   := $(venv_exec) python
 
@@ -32,13 +32,13 @@ app_root      := cardinal
 $(venv_path): $(venv_activate)
 $(venv_activate): Makefile $(req_floating)
 	@test -d $(venv_path) || virtualenv -p $(python_bin) $(venv_path)
-	@$(venv_pip) install -Ur $(req_floating)
+	@$(venv_pip) install --upgrade --editable .
 	@touch $(venv_activate)
 
 # Destroy the virtual environment and cache files.
 .PHONY: clean
 clean:
-	@$(RM) -r $(venv_path)
+	@$(RM) -r $(venv_path) *.egg-info
 	@find $(app_root) \
 		-name __pycache__ \
 		-type d \
@@ -76,12 +76,12 @@ repl: $(venv_path)
 # Execute the code within the virtual environment.
 .PHONY: run
 run: $(venv_path)
-	@$(venv_python) -tt $(app_root)/main.py
+	@$(venv_exec) cardinal
 
 # Execute a shell within the virtual environment.
 .PHONY: shell
 shell: $(venv_path)
-	@$(venv_exec) $(SHELL)
+	@$(venv_exec) /bin/bash --norc
 
 # Perform unit tests.
 .PHONY: test

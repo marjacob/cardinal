@@ -5,9 +5,10 @@ import os
 
 
 class CardinalSettings(object):
-    def __init__(self, project="cardinal"):
+    def __init__(self, project="cardinal", persona=None):
         self.__project = project
         self.__user_home = os.path.expanduser('~')
+        self.persona = persona if persona else "default"
         self.nick = "cardinal"
         self.realname = "cardinal"
         self.host = "chat.freenode.net"
@@ -17,8 +18,8 @@ class CardinalSettings(object):
         self.plugins = [
             "irc3.plugins.log",
             "irc3.plugins.uptime",
-            "plugins.sio_plugin",
-            "plugins.termvakt_plugin"
+            "cardinal.plugins.sio",
+            "cardinal.plugins.termvakt"
         ]
 
     @property
@@ -35,7 +36,8 @@ class CardinalSettings(object):
 
     @property
     def config_file(self):
-        return os.path.join(self.config_home, "config.json")
+        return os.path.join(self.config_home, 
+                            "{persona}.json".format(persona=self.persona))
 
     def to_dict(self):
         return {
