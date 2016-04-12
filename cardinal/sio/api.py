@@ -157,6 +157,7 @@ def strip_sio(dish):
     prefixes = [
         "Du finner også flere varme ingredienser på buffeten:",
         "Funky Junk Friday:",
+        "Meatless monday:",
         "På buffeten finner du også",
         "Working Class Hero Thursday:"
     ]
